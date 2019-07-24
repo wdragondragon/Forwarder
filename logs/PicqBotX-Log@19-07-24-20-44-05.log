@@ -1,0 +1,70 @@
+[19-07-24 20:44:05] [PicqBotX] [INFO] 
+[19-07-24 20:44:05] [PicqBotX] [INFO]     ____  _            ____        __ _  __
+[19-07-24 20:44:05] [PicqBotX] [INFO]    / __ \(_)________ _/ __ )____  / /| |/ /
+[19-07-24 20:44:05] [PicqBotX] [INFO]   / /_/ / / ___/ __ `/ __  / __ \/ __/   /
+[19-07-24 20:44:05] [PicqBotX] [INFO]  / ____/ / /__/ /_/ / /_/ / /_/ / /_/   |
+[19-07-24 20:44:05] [PicqBotX] [INFO] /_/   /_/\___/\__, /_____/\____/\__/_/|_|
+[19-07-24 20:44:05] [PicqBotX] [INFO]                 /_/         v4.10.1.928
+[19-07-24 20:44:05] [PicqBotX] [INFO] 日志管理器     初始化完成 [******] ...(40.08 ms)
+[19-07-24 20:44:05] [PicqBotX] [INFO] 缓存管理器     初始化完成 [******] ...(1.64 ms)
+[19-07-24 20:44:05] [PicqBotX] [INFO] DEBUG设置     初始化完成 [******] ...(0.01 ms)
+[19-07-24 20:44:05] [PicqBotX] [INFO] 事件管理器     初始化完成 [******] ...(33.22 ms)
+[19-07-24 20:44:05] [PicqBotX] [INFO] 账号管理器     初始化完成 [******] ...(0.77 ms)
+[19-07-24 20:44:05] [PicqBotX] [INFO] HTTP监听服务器 初始化完成 [******] ...(1.72 ms)
+[19-07-24 20:44:06] [PicqBotX] [INFO] 账号 Bot01:   版本验证完成!
+[19-07-24 20:44:06] [PicqBotX] [INFO] 正在启动...
+[19-07-24 20:44:08] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:08] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400424,"message":"-启动","message_id":64145,"message_type":"private","post_type":"message","raw_message":"-启动","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972248,"user_id":1061917110}
+[19-07-24 20:44:10] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:10] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400584,"message":"#匹配","message_id":64147,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972250,"user_id":1061917110}
+[19-07-24 20:44:13] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:13] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400296,"message":"#匹配","message_id":64149,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972253,"user_id":1061917700}
+[19-07-24 20:44:17] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:17] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400904,"message":"#匹配","message_id":64153,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563972257,"user_id":1061917196}
+[19-07-24 20:44:19] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:19] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400136,"message":"#退出","message_id":64155,"message_type":"private","post_type":"message","raw_message":"#退出","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972259,"user_id":1061917700}
+[19-07-24 20:44:21] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:21] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399304,"message":"#匹配","message_id":64158,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972261,"user_id":1061917700}
+[19-07-24 20:44:25] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:25] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399304,"message":"#退出","message_id":64162,"message_type":"private","post_type":"message","raw_message":"#退出","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972265,"user_id":1061917700}
+[19-07-24 20:44:28] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:28] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399624,"message":"#匹配","message_id":64165,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563972268,"user_id":1061917196}
+[19-07-24 20:44:31] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:31] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399304,"message":"#匹配","message_id":64167,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972271,"user_id":1061917110}
+[19-07-24 20:44:33] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:33] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399304,"message":"#匹配","message_id":64169,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972273,"user_id":1061917700}
+[19-07-24 20:44:37] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:37] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399496,"message":"#退出","message_id":64173,"message_type":"private","post_type":"message","raw_message":"#退出","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972277,"user_id":1061917700}
+[19-07-24 20:44:38] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:38] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399848,"message":"#匹配","message_id":64176,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972278,"user_id":1061917700}
+[19-07-24 20:44:41] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:41] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399464,"message":"的","message_id":64180,"message_type":"private","post_type":"message","raw_message":"的","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972281,"user_id":1061917700}
+[19-07-24 20:44:49] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:49] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399752,"message":"[CQ:face,id=101]","message_id":64182,"message_type":"private","post_type":"message","raw_message":"[CQ:face,id=101]","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972289,"user_id":1061917700}
+[19-07-24 20:44:51] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:51] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399528,"message":"#匹配","message_id":64184,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563972291,"user_id":1061917196}
+[19-07-24 20:44:54] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:44:54] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8399656,"message":"[CQ:face,id=101]","message_id":64186,"message_type":"private","post_type":"message","raw_message":"[CQ:face,id=101]","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972294,"user_id":1061917700}
+[19-07-24 20:45:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400264,"message":"#匹配","message_id":64188,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972300,"user_id":1061917700}
+[19-07-24 20:45:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400520,"message":"正在匹配","message_id":64190,"message_type":"private","post_type":"message","raw_message":"正在匹配","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972300,"user_id":1061917110}
+[19-07-24 20:45:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400712,"message":"已配对，对方使用QQ","message_id":64192,"message_type":"private","post_type":"message","raw_message":"已配对，对方使用QQ","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972300,"user_id":1061917110}
+[19-07-24 20:45:13] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:13] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400200,"message":"#匹配","message_id":64194,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972313,"user_id":1061917700}
+[19-07-24 20:45:17] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:17] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400840,"message":"#匹配","message_id":64196,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972317,"user_id":1061917110}
+[19-07-24 20:45:19] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:19] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400520,"message":"的","message_id":64198,"message_type":"private","post_type":"message","raw_message":"的","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972319,"user_id":1061917110}
+[19-07-24 20:45:20] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:20] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400136,"message":"你好","message_id":64200,"message_type":"private","post_type":"message","raw_message":"你好","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563972320,"user_id":1061917110}
+[19-07-24 20:45:27] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:27] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400584,"message":"#退出","message_id":64202,"message_type":"private","post_type":"message","raw_message":"#退出","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972327,"user_id":1061917700}
+[19-07-24 20:45:28] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:28] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400072,"message":"#匹配","message_id":64205,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563972328,"user_id":1061917700}
+[19-07-24 20:45:30] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:30] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400456,"message":"的","message_id":64209,"message_type":"private","post_type":"message","raw_message":"的","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563972330,"user_id":1061917196}
+[19-07-24 20:45:31] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:45:31] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400424,"message":"你好","message_id":64211,"message_type":"private","post_type":"message","raw_message":"你好","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563972331,"user_id":1061917196}
+[19-07-24 20:45:36] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1

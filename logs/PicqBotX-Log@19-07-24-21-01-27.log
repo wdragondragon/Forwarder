@@ -1,0 +1,18 @@
+[19-07-24 21:01:27] [PicqBotX] [INFO] 
+[19-07-24 21:01:27] [PicqBotX] [INFO]     ____  _            ____        __ _  __
+[19-07-24 21:01:27] [PicqBotX] [INFO]    / __ \(_)________ _/ __ )____  / /| |/ /
+[19-07-24 21:01:27] [PicqBotX] [INFO]   / /_/ / / ___/ __ `/ __  / __ \/ __/   /
+[19-07-24 21:01:27] [PicqBotX] [INFO]  / ____/ / /__/ /_/ / /_/ / /_/ / /_/   |
+[19-07-24 21:01:27] [PicqBotX] [INFO] /_/   /_/\___/\__, /_____/\____/\__/_/|_|
+[19-07-24 21:01:27] [PicqBotX] [INFO]                 /_/         v4.10.1.928
+[19-07-24 21:01:27] [PicqBotX] [INFO] 日志管理器     初始化完成 [******] ...(30.74 ms)
+[19-07-24 21:01:27] [PicqBotX] [INFO] 缓存管理器     初始化完成 [******] ...(1.26 ms)
+[19-07-24 21:01:27] [PicqBotX] [INFO] DEBUG设置     初始化完成 [******] ...(0.01 ms)
+[19-07-24 21:01:27] [PicqBotX] [INFO] 事件管理器     初始化完成 [******] ...(27.66 ms)
+[19-07-24 21:01:27] [PicqBotX] [INFO] 账号管理器     初始化完成 [******] ...(0.82 ms)
+[19-07-24 21:01:27] [PicqBotX] [INFO] HTTP监听服务器 初始化完成 [******] ...(1.41 ms)
+[19-07-24 21:01:27] [PicqBotX] [INFO] 账号 Bot01:   版本验证完成!
+[19-07-24 21:01:27] [PicqBotX] [INFO] 正在启动...
+[19-07-24 21:01:28] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 21:01:28] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"anonymous":null,"font":8399528,"group_id":556981260,"message":"那没意思，以后的速度提升路都给你弄没了","message_id":64351,"message_type":"group","post_type":"message","raw_message":"那没意思，以后的速度提升路都给你弄没了","self_id":2997400528,"sender":{"age":0,"area":"","card":"天生我才最无用の白焕 - 小鹤音形","level":"新日电动车","nickname":"_白焕゛","role":"member","sex":"unknown","title":"","user_id":2524098743},"sub_type":"normal","time":1563973287,"user_id":2524098743}
+[19-07-24 21:01:36] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1

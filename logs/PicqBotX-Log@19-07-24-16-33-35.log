@@ -1,0 +1,24 @@
+[19-07-24 16:33:35] [PicqBotX] [INFO] 
+[19-07-24 16:33:35] [PicqBotX] [INFO]     ____  _            ____        __ _  __
+[19-07-24 16:33:35] [PicqBotX] [INFO]    / __ \(_)________ _/ __ )____  / /| |/ /
+[19-07-24 16:33:35] [PicqBotX] [INFO]   / /_/ / / ___/ __ `/ __  / __ \/ __/   /
+[19-07-24 16:33:35] [PicqBotX] [INFO]  / ____/ / /__/ /_/ / /_/ / /_/ / /_/   |
+[19-07-24 16:33:35] [PicqBotX] [INFO] /_/   /_/\___/\__, /_____/\____/\__/_/|_|
+[19-07-24 16:33:35] [PicqBotX] [INFO]                 /_/         v4.10.1.928
+[19-07-24 16:33:35] [PicqBotX] [INFO] 日志管理器     初始化完成 [******] ...(59.21 ms)
+[19-07-24 16:33:35] [PicqBotX] [INFO] 缓存管理器     初始化完成 [******] ...(3.03 ms)
+[19-07-24 16:33:35] [PicqBotX] [INFO] DEBUG设置     初始化完成 [******] ...(0.01 ms)
+[19-07-24 16:33:35] [PicqBotX] [INFO] 事件管理器     初始化完成 [******] ...(79.98 ms)
+[19-07-24 16:33:35] [PicqBotX] [INFO] 账号管理器     初始化完成 [******] ...(1.23 ms)
+[19-07-24 16:33:35] [PicqBotX] [INFO] HTTP监听服务器 初始化完成 [******] ...(2.65 ms)
+[19-07-24 16:33:36] [PicqBotX] [INFO] 账号 Bot01:   版本验证完成!
+[19-07-24 16:33:36] [PicqBotX] [INFO] 正在启动...
+[19-07-24 16:33:37] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 16:33:37] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"anonymous":null,"font":7642560,"group_id":723795668,"message":"为什么双拼要思考","message_id":63600,"message_type":"group","post_type":"message","raw_message":"为什么双拼要思考","self_id":2997400528,"sender":{"age":0,"area":"","card":"暴躁徐坤","level":"高手","nickname":"……","role":"member","sex":"unknown","title":"","user_id":3020414784},"sub_type":"normal","time":1563957217,"user_id":3020414784}
+[19-07-24 16:33:48] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 16:33:48] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":7642336,"message":"-启动","message_id":63601,"message_type":"private","post_type":"message","raw_message":"-启动","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563957228,"user_id":1061917196}
+[19-07-24 16:33:48] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 16:33:48] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":7642336,"message":"#匹配","message_id":63603,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563957228,"user_id":1061917196}
+[19-07-24 16:33:55] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 16:33:55] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"anonymous":null,"font":7642624,"group_id":723795668,"message":"贼烦","message_id":63605,"message_type":"group","post_type":"message","raw_message":"贼烦","self_id":2997400528,"sender":{"age":0,"area":"","card":"暴躁徐坤","level":"高手","nickname":"……","role":"member","sex":"unknown","title":"","user_id":3020414784},"sub_type":"normal","time":1563957235,"user_id":3020414784}
+[19-07-24 16:34:04] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1

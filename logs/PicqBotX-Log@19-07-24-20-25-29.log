@@ -1,0 +1,32 @@
+[19-07-24 20:25:29] [PicqBotX] [INFO] 
+[19-07-24 20:25:29] [PicqBotX] [INFO]     ____  _            ____        __ _  __
+[19-07-24 20:25:29] [PicqBotX] [INFO]    / __ \(_)________ _/ __ )____  / /| |/ /
+[19-07-24 20:25:29] [PicqBotX] [INFO]   / /_/ / / ___/ __ `/ __  / __ \/ __/   /
+[19-07-24 20:25:29] [PicqBotX] [INFO]  / ____/ / /__/ /_/ / /_/ / /_/ / /_/   |
+[19-07-24 20:25:29] [PicqBotX] [INFO] /_/   /_/\___/\__, /_____/\____/\__/_/|_|
+[19-07-24 20:25:29] [PicqBotX] [INFO]                 /_/         v4.10.1.928
+[19-07-24 20:25:29] [PicqBotX] [INFO] 日志管理器     初始化完成 [******] ...(41.78 ms)
+[19-07-24 20:25:29] [PicqBotX] [INFO] 缓存管理器     初始化完成 [******] ...(2.44 ms)
+[19-07-24 20:25:29] [PicqBotX] [INFO] DEBUG设置     初始化完成 [******] ...(0.01 ms)
+[19-07-24 20:25:29] [PicqBotX] [INFO] 事件管理器     初始化完成 [******] ...(35.28 ms)
+[19-07-24 20:25:29] [PicqBotX] [INFO] 账号管理器     初始化完成 [******] ...(1.13 ms)
+[19-07-24 20:25:29] [PicqBotX] [INFO] HTTP监听服务器 初始化完成 [******] ...(2.99 ms)
+[19-07-24 20:25:30] [PicqBotX] [INFO] 账号 Bot01:   版本验证完成!
+[19-07-24 20:25:30] [PicqBotX] [INFO] 正在启动...
+[19-07-24 20:25:31] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:25:31] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400072,"message":"-启动","message_id":64048,"message_type":"private","post_type":"message","raw_message":"-启动","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563971131,"user_id":1061917196}
+[19-07-24 20:25:33] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:25:33] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400872,"message":"#匹配","message_id":64050,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"传话筒","sex":"male","user_id":1061917110},"sub_type":"friend","time":1563971133,"user_id":1061917110}
+[19-07-24 20:25:35] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:25:35] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"anonymous":null,"font":8400680,"group_id":556981260,"message":"剑是把好剑、","message_id":64052,"message_type":"group","post_type":"message","raw_message":"剑是把好剑、","self_id":2997400528,"sender":{"age":120,"area":"泽西岛","card":"赤练仙子一米七——搜狗纯双","level":"波音747","nickname":"白猫王子","role":"member","sex":"male","title":"","user_id":2370792076},"sub_type":"normal","time":1563971135,"user_id":2370792076}
+[19-07-24 20:25:35] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:25:35] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400072,"message":"#匹配","message_id":64053,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":8,"nickname":"0 4 . 2 2","sex":"male","user_id":1061917196},"sub_type":"friend","time":1563971135,"user_id":1061917196}
+[19-07-24 20:26:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:26:00] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"anonymous":null,"font":8400840,"group_id":556981260,"message":"唉，我等凡夫俗子不配拥有，难以驾驭","message_id":64055,"message_type":"group","post_type":"message","raw_message":"唉，我等凡夫俗子不配拥有，难以驾驭","self_id":2997400528,"sender":{"age":25,"area":"","card":"利键—双拼","level":"五菱宏光","nickname":"神采飞扬","role":"member","sex":"male","title":"","user_id":1078179677},"sub_type":"normal","time":1563971160,"user_id":1078179677}
+[19-07-24 20:26:03] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:26:03] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"anonymous":null,"font":8400168,"group_id":556981260,"message":"[CQ:image,file=B5ABC2AEE09C89F79BB2766063CAEC03.jpg,url=https://gchat.qpic.cn/gchatpic_new/1137948935/556981260-3109488483-B5ABC2AEE09C89F79BB2766063CAEC03/0?vuin=2997400528&amp;term=2]","message_id":64056,"message_type":"group","post_type":"message","raw_message":"[CQ:image,file=B5ABC2AEE09C89F79BB2766063CAEC03.jpg]","self_id":2997400528,"sender":{"age":0,"area":"上海","card":"淡淡的徒弟小鲤鱼-亚伟","level":"死飞单车","nickname":"小鲤鱼","role":"admin","sex":"female","title":"","user_id":1957992261},"sub_type":"normal","time":1563971163,"user_id":1957992261}
+[19-07-24 20:26:17] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:26:17] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400584,"message":"#匹配","message_id":64057,"message_type":"private","post_type":"message","raw_message":"#匹配","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563971177,"user_id":1061917700}
+[19-07-24 20:26:22] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
+[19-07-24 20:26:22] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] - 数据: {"font":8400840,"message":"#退出","message_id":64061,"message_type":"private","post_type":"message","raw_message":"#退出","self_id":2997400528,"sender":{"age":22,"nickname":"过度","sex":"female","user_id":1061917700},"sub_type":"friend","time":1563971182,"user_id":1061917700}
+[19-07-24 20:29:02] [PicqBotX] [DEBUG(java.lang.Thread.run:748)] 收到新请求: CQHttp/4.10.1
