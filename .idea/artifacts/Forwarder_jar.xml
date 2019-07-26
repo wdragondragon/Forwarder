@@ -3,17 +3,18 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Forwarder_jar</output-path>
     <root id="archive" name="Forwarder.jar">
       <element id="module-output" name="Forwarder" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/hydevelop/HyLogger/4.0.254/HyLogger-4.0.254.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itchat4j-1.1.0-jar-with-dependencies.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itchat4j-1.1.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.14.8/lombok-1.14.8.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.5.18/hutool-all-4.5.18.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/beautyeye_lnf.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/hydevelop/HyCommonUtils/1.4.0.207/HyCommonUtils-1.4.0.207.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mariuszgromada/math/MathParser.org-mXparser/4.2.0/MathParser.org-mXparser-4.2.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itchat4j-1.1.0-jar-with-dependencies.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/itchat4j-1.1.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/hydevelop/PicqBotX/4.10.1.928/PicqBotX-4.10.1.928.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mariuszgromada/math/MathParser.org-mXparser/4.2.0/MathParser.org-mXparser-4.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/hydevelop/PicqBotX/4.10.1.928/PicqBotX-4.10.1.928.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/hydevelop/HyLogger/4.0.254/HyLogger-4.0.254.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/fusesource/jansi/jansi/1.17.1/jansi-1.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/fastjson-1.2.9.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

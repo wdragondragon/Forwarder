@@ -1,4 +1,8 @@
 package game.P2P.handle;
+import game.P2P.Tools.DownloadMsg;
+import game.P2P.bean.PrivateMsg;
+import game.P2P.bean.User_adr;
+import game.P2P.bean.User_info;
 
 import cc.moecraft.icq.event.EventHandler;
 import cc.moecraft.icq.event.events.message.EventPrivateMessage;
@@ -10,17 +14,12 @@ import cn.zhouyafeng.itchat4j.beans.BaseMsg;
 import cn.zhouyafeng.itchat4j.beans.RecommendInfo;
 import cn.zhouyafeng.itchat4j.utils.enums.MsgTypeEnum;
 import cn.zhouyafeng.itchat4j.utils.tools.DownloadTools;
-import game.P2P.Tools.DownloadMsg;
-import game.P2P.bean.PrivateMsg;
-import game.P2P.bean.User_adr;
-import game.P2P.bean.User_info;
 import org.apache.log4j.Logger;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class Adapter extends WXandQQListener implements Controller{
     private Logger LOG = Logger.getLogger(WXandQQListener.class);
-    private boolean startup_status = false;//适配器开关
     @Override
     public abstract void handleMsg(PrivateMsg msg);
     @Override
@@ -53,7 +52,7 @@ public abstract class Adapter extends WXandQQListener implements Controller{
             }else if(recordindex!=-1){
                 //向微信发送语音
                 String filename = message.substring(recordindex+12,message.length()-1);
-                    String voice = User_adr.voice + filename;
+                String voice = User_adr.voice + filename;
                 MessageTools.sendFileMsgByUserId(id,voice);
             } else {
                 MessageTools.sendMsgById(message,id);
@@ -91,8 +90,6 @@ public abstract class Adapter extends WXandQQListener implements Controller{
             MessageTools.sendFileMsgByUserId(id,filepath);
         }
     }
-
-
     @EventHandler
     public void friend(EventFriendRequest event){
         event.accept();
@@ -105,13 +102,6 @@ public abstract class Adapter extends WXandQQListener implements Controller{
     @EventHandler
     public void Carry(EventPrivateMessage event){
         String message = event.getMessage();
-        if(message.equals("-启动")){
-            startup_status = true;
-            event.respond("已启动");
-        } else if(message.equals("-关闭")){
-            startup_status = false;
-        }
-        if (!startup_status)return;
         RStrangerInfo userinfo = event.getSender().getInfo();
         String username = userinfo.getNickname();
         String QQnumber = userinfo.getUserId().toString();
@@ -121,10 +111,10 @@ public abstract class Adapter extends WXandQQListener implements Controller{
                 .sex(usersex)
                 .age(userage)
                 .type("QQ");
-
         handleMsg(new PrivateMsg()
                 .message(message)
                 .userinfo(user_info)
+                .qqmsg(event)
         );
     }
 
@@ -137,15 +127,11 @@ public abstract class Adapter extends WXandQQListener implements Controller{
     public String textMsgHandle(BaseMsg msg) {
         if(msg.isGroupMsg())return null;
         String message = msg.getText();
-        if(message.equals("-启动")){
-            startup_status = true;
-        } else if(message.equals("-关闭")){
-            startup_status = false;
-        }
-        if (!startup_status)return null;
         handleMsg(new PrivateMsg()
                 .message(message)
-                .userinfo(getWXUserInfo(msg)));
+                .userinfo(getWXUserInfo(msg))
+                .wxmsg(msg)
+        );
         return null;
     }
 
@@ -157,14 +143,15 @@ public abstract class Adapter extends WXandQQListener implements Controller{
     @Override
     public String picMsgHandle(BaseMsg msg) {
         if(msg.isGroupMsg())return null;
-        else if(!startup_status)return null;
         String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date())+ ".jpg";// 这里使用收到图片的时间作为文件名
         String picPath = User_adr.image + fileName ; // 调用此方法来保存图片
         DownloadTools.getDownloadFn(msg, MsgTypeEnum.PIC.getType(), picPath); // 保存图片的路径
         System.out.println("图片保存成功");
         WXhandleImgMsg(new PrivateMsg()
                 .userinfo(getWXUserInfo(msg))
-                .path(fileName));
+                .path(fileName)
+                .wxmsg(msg)
+        );
         return null;
     }
 
@@ -182,7 +169,9 @@ public abstract class Adapter extends WXandQQListener implements Controller{
         System.out.println( "声音保存成功");
         WXhandleVoiceMsg(new PrivateMsg()
                 .userinfo(getWXUserInfo(msg))
-                .path(fileName));
+                .path(fileName)
+                .wxmsg(msg)
+        );
         return null;
     }
 
@@ -200,7 +189,9 @@ public abstract class Adapter extends WXandQQListener implements Controller{
         System.out.println("视频保存成功");
         WXhandleFileMsg(new PrivateMsg()
                 .userinfo(getWXUserInfo(msg))
-                .path(viedoPath));
+                .path(viedoPath)
+                .wxmsg(msg)
+        );
         return null;
     }
 
@@ -218,7 +209,9 @@ public abstract class Adapter extends WXandQQListener implements Controller{
         System.out.println("文件" + fileName + "保存成功");
         WXhandleFileMsg(new PrivateMsg()
                 .userinfo(getWXUserInfo(msg))
-                .path(filePath));
+                .path(filePath)
+                .wxmsg(msg)
+        );
         return null;
     }
 
@@ -262,10 +255,10 @@ public abstract class Adapter extends WXandQQListener implements Controller{
      */
     private User_info getWXUserInfo(BaseMsg msg){
         String id = msg.getFromUserName();
-        String name = "未知";
+        String name = msg.getRecommendInfo().getNickName();
         return new User_info(id,name)
                 .age(0)
-                .sex(name)
+                .sex("unknow")
                 .type("WX");
     }
 }

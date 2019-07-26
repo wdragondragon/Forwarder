@@ -1,4 +1,4 @@
-package GUIAdmin;
+package GUIAdmin.Listener;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;

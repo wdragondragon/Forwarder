@@ -1,9 +1,12 @@
 package ConfessionWall.club;
 
-import cc.moecraft.icq.PicqBotX;
+import GUIAdmin.NewSysLog.PicqBotX;
+import GUIAdmin.NewSysLog.Wechat;
+//import cc.moecraft.icq.PicqBotX;
+
+import GUIAdmin.Tools.PointManager;
 import cc.moecraft.icq.PicqConfig;
 import cc.moecraft.icq.sender.IcqHttpApi;
-import cn.zhouyafeng.itchat4j.Wechat;
 import GUIAdmin.PointClient;
 import game.P2P.handle.WXandQQListener;
 
@@ -21,24 +24,28 @@ public class bot implements botAdapter{
         return true;
     }
     @Override
-    public boolean openQQbot() {
+    public boolean openQQbot(int sockerPort,String postUrl,int postPort) {
         //创建机器人对象 ( 传入配置 )
-        PicqBotX bot = new PicqBotX(new PicqConfig(9999).setDebug(true));
+        PicqBotX bot = new PicqBotX(new PicqConfig(sockerPort).setDebug(true));
         // 添加一个机器人账户 ( 名字, 发送URL, 发送端口 )
-        bot.addAccount("Bot01", "127.0.0.1", 5700);
+        bot.addAccount("Bot01", postUrl, postPort);
         httpApi = bot.getAccountManager()
                 .getNonAccountSpecifiedApi();
         WXandQQListener pointClient = new PointClient(httpApi);
+        WXandQQListener manager = new PointManager(httpApi);
         // 注册事件监听器, 可以注册多个监听器
-        bot.getEventManager().registerListener(pointClient);
+        bot.getEventManager().registerListeners(
+                pointClient
+                ,manager
+        );
         // 启动机器人, 不会占用主线程
         bot.startBot();
         return true;
     }
     @Override
-    public boolean openBoth() {
-        PicqBotX bot = new PicqBotX(new PicqConfig(9999).setDebug(true));
-        bot.addAccount("Bot01", "127.0.0.1", 5700);
+    public boolean openBoth(int sockerPort,String postUrl,int postPort) {
+        PicqBotX bot = new PicqBotX(new PicqConfig(sockerPort).setDebug(true));
+        bot.addAccount("Bot01", postUrl, postPort);
         httpApi = bot.getAccountManager()
                 .getNonAccountSpecifiedApi();
         WXandQQListener controller = new PointClient(httpApi);
