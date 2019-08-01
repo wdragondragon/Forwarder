@@ -1,6 +1,7 @@
 package GUIAdmin;
 
 import GUIAdmin.Bean.Room;
+import GUIAdmin.Tools.listopra;
 import cc.moecraft.icq.sender.IcqHttpApi;
 import game.P2P.bean.PrivateMsg;
 import game.P2P.bean.User_info;
@@ -72,6 +73,17 @@ public class PointClient extends Adapter {
                     //成员添加
                     member.put(id, user_info);
                     SendMsgToID("正在匹配", id, type);
+
+                    //通知关注你的人
+                    if(win.carelist.containsKey(id)){
+                        List<String> carelist = win.carelist.get(id);
+                        for (String s : carelist) {
+                            System.out.println(s);
+                            SendMsgToID("你关注的人正在匹配",s,type);
+                        }
+                    }
+                    //添加到使用过的用户名单，用于广播
+                    listopra.addMemberlist(id);
                     //判断是否满人
                     if (roommember.size() == 2) {
                         //临时房间满人，放入房间map
@@ -85,6 +97,13 @@ public class PointClient extends Adapter {
                             String sendtype = member.get(linkfromid).getType();
                             String sendsex = member.get(linkfromid).getSex();
                             SendMsgToID("已配对，对方使用" + sendtype + "对方性别" + sendsex, sendtoid, totype);
+
+                            //检测有没有互相匹配到关注的人
+                            if(win.carelist.containsKey(linkfromid)){
+                                List<String> carelist = win.carelist.get(linkfromid);
+                                if(carelist.contains(sendtoid))
+                                    SendMsgToID("偷偷告诉你，你和你关注的人匹配到一起了哦！",sendtoid,totype);
+                            }
                             if(i==1){
                                 win.log("------\n"+log+"\n配对\n"+totype+"id:" + linkfromid + " 性别:"+ sendsex + " 房间号:" + roomnumtemp + "\n------");
                             }
@@ -114,6 +133,26 @@ public class PointClient extends Adapter {
                             ,room.getCreatedata()
                             ,room.getDeteledata()
                             ,room.getMessagenum());
+                } else if(message.equals("#关注")){
+                    if(member.get(roommember1.get(0)).getType().equals("QQ")
+                            &&member.get(roommember1.get(1)).getType().equals("QQ")) {
+                        for (String careid : roommember1)
+                            if (!careid.equals(id))
+                                if(listopra.addCarelist(id, careid))SendMsgToID("关注成功",id,type);
+                                else SendMsgToID("你已关注过他/她",id,type);
+                    }else{
+                        SendMsgToID("关注只支持QQ，请确定对方和你都为QQ端",id,type);
+                    }
+                } else if(message.equals("#取消关注")){
+                    if(member.get(roommember1.get(0)).getType().equals("QQ")
+                            &&member.get(roommember1.get(1)).getType().equals("QQ")) {
+                        for (String careid : roommember1)
+                            if (!careid.equals(id))
+                                if(listopra.delCarelist(id, careid))SendMsgToID("取消关注成功",id,type);
+                                else SendMsgToID("你未关注过他/她",id,type);
+                    }else{
+                        SendMsgToID("关注只支持QQ，请确定对方和你都为QQ端",id,type);
+                    }
                 } else {
                     roommap.get(member.get(id).getRoomnumber()).addMessagenum();
                     for (String sendtoid : roommember1) {

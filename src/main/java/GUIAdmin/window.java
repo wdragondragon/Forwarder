@@ -14,6 +14,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
@@ -304,6 +305,8 @@ public class window extends JFrame {
             managertableM.addRow(vRow);
         }
     }
+    public HashMap<String,List<String>> carelist = Fileopra.readCarelist();
+    public List<String> memeberlist =  Fileopra.readMemberlist();
     private void initpath(){
         JSONObject json =  Fileopra.readfile();
         if(json==null)return;

@@ -3,6 +3,7 @@ import com.alibaba.fastjson.JSONObject;
 import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Fileopra {
@@ -107,5 +108,61 @@ public class Fileopra {
             e.printStackTrace();
         }
         return manager;
+    }
+    public static HashMap readCarelist(){
+        HashMap<String,List<String>> carelist = new HashMap<>();
+        try{
+            FileInputStream in = new FileInputStream("carelist.ini");
+            ObjectInputStream reader = new ObjectInputStream(in);
+            if(null != (carelist = (HashMap<String,List<String>>) reader.readObject())){
+                System.out.println(carelist);
+            }
+            reader.close();
+            in.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return carelist;
+    }
+    public static void writeCarelist(HashMap carelist){
+        try{
+            FileOutputStream out = new FileOutputStream("carelist.ini",false);
+            ObjectOutputStream writer = new ObjectOutputStream(out);
+            System.out.println("关注名单"+carelist);
+            writer.writeObject(carelist);
+            writer.flush();
+            writer.close();
+            out.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    public static List<String> readMemberlist(){
+        List<String> memberlist = new ArrayList<>();
+        try{
+            FileInputStream in = new FileInputStream("memberlist.ini");
+            ObjectInputStream reader = new ObjectInputStream(in);
+            if(null != (memberlist = (List<String>) reader.readObject())){
+                System.out.println(memberlist);
+            }
+            reader.close();
+            in.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return memberlist;
+    }
+    public static void writeMemberlist(List memberlist){
+        try{
+            FileOutputStream out = new FileOutputStream("memberlist.ini",false);
+            ObjectOutputStream writer = new ObjectOutputStream(out);
+            System.out.println("广播名单"+memberlist);
+            writer.writeObject(memberlist);
+            writer.flush();
+            writer.close();
+            out.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
